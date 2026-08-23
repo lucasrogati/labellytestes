@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — La Belly</title>
+<meta name="description" content="Política de privacidade da loja La Belly.">
+<link rel="canonical" href="https://labelly.netlify.app/privacidade.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#121113">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <a class="brand" href="index.html">La Belly</a>
+  <a class="header-cta" href="index.html">← Voltar à loja</a>
+</header>
+
+<main class="page-content page-content--texto">
+  <p class="page-kicker">Legal</p>
+  <h1 class="page-title">Política de Privacidade</h1>
+  <p class="page-lead">Última atualização: <span id="dataAtual"></span></p>
+
+  <p class="page-aviso">
+    ⚠️ Este é um modelo genérico de referência, não um documento jurídico pronto.
+    Antes de publicar oficialmente, revise com um advogado ou contador para
+    garantir conformidade com a LGPD (Lei Geral de Proteção de Dados) e ajuste
+    os dados da empresa abaixo.
+  </p>
+
+  <h2>1. Quem somos</h2>
+  <p>A La Belly é uma loja de lingerie e produtos íntimos que disponibiliza um catálogo digital de produtos, com atendimento discreto. As compras são finalizadas diretamente via WhatsApp, com um atendente da loja.</p>
+
+  <h2>2. Quais dados coletamos</h2>
+  <p>Este site não possui cadastro, login, banco de dados ou pagamento online. O carrinho de compras funciona apenas no seu próprio navegador (tecnologia chamada LocalStorage): os itens que você adiciona ficam salvos localmente no seu aparelho, para que o carrinho não se perca se a página for recarregada, e não são enviados nem armazenados em nenhum servidor da loja. Ao clicar em "Finalizar pedido" ou "Comprar no WhatsApp", uma mensagem pré-preenchida é aberta no seu aplicativo de WhatsApp. A partir daí, qualquer dado pessoal (nome, endereço, telefone) que você compartilhar é tratado diretamente na conversa de WhatsApp com a loja.</p>
+
+  <h2>3. Cookies e navegação</h2>
+  <p>O site pode usar recursos técnicos básicos de navegação (como fontes e hospedagem) que podem registrar dados padrão de acesso (como endereço IP e navegador utilizado), conforme prática comum de qualquer site hospedado na internet.</p>
+
+  <h2>4. Compartilhamento de dados</h2>
+  <p>Não vendemos, alugamos ou compartilhamos dados pessoais com terceiros para fins de marketing.</p>
+
+  <h2>5. Seus direitos</h2>
+  <p>Você pode, a qualquer momento, solicitar informações sobre os dados que compartilhou conosco via WhatsApp, pedir a correção ou exclusão deles, entrando em contato pelos canais informados na página de <a href="contato.html">Contato</a>.</p>
+
+  <h2>6. Contato</h2>
+  <p>Dúvidas sobre esta política podem ser enviadas pelo <a href="contato.html">WhatsApp ou e-mail informados na página de contato</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">La Belly</div>
+  <div class="footer-links">
+    <a href="index.html">Loja</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <p class="footer-fine">© <span id="year"></span> La Belly. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script>
+  document.getElementById('dataAtual').textContent = new Date().toLocaleDateString('pt-BR', { year: 'numeric', month: 'long' });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

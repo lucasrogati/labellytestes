@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato — La Belly</title>
+<meta name="description" content="Fale com a La Belly pelo WhatsApp ou Instagram, com atendimento discreto e personalizado.">
+<link rel="canonical" href="https://labelly.netlify.app/contato.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#121113">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <a class="brand" href="index.html">La Belly</a>
+  <a class="header-cta" href="index.html">← Voltar à loja</a>
+</header>
+
+<main class="page-content">
+  <p class="page-kicker">Fale com a gente</p>
+  <h1 class="page-title">Contato</h1>
+  <p class="page-lead">Prefere resolver tudo por mensagem? A gente também. Escolha o canal que for mais fácil pra você.</p>
+
+  <div class="page-contact-grid">
+    <a class="page-contact-card" id="contatoWhatsapp" target="_blank" rel="noopener">
+      <span class="page-contact-label">WhatsApp</span>
+      <span class="page-contact-value">Resposta mais rápida</span>
+    </a>
+    <a class="page-contact-card" href="https://instagram.com/la_belly.__013" target="_blank" rel="noopener">
+      <span class="page-contact-label">Instagram</span>
+      <span class="page-contact-value">@la_belly.__013</span>
+    </a>
+  </div>
+
+  <p class="page-note">Atendimento discreto e personalizado, de segunda a sábado. Fora desse horário, deixe sua mensagem que respondemos assim que possível.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">La Belly</div>
+  <div class="footer-links">
+    <a href="index.html">Loja</a>
+    <a href="privacidade.html">Política de Privacidade</a>
+    <a href="https://instagram.com/la_belly.__013" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="footer-fine">© <span id="year"></span> La Belly. Todos os direitos reservados.</p>
+</footer>
+
+<script src="js/config.js"></script>
+<script>
+  document.getElementById('contatoWhatsapp').href =
+    'https://wa.me/' + CONFIG.whatsappNumber + '?text=' +
+    encodeURIComponent('Olá! Vim pelo site da ' + CONFIG.nomeLoja + ' e queria tirar uma dúvida.');
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
