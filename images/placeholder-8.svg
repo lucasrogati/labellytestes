@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="g8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c1a1d"/>
+      <stop offset="100%" stop-color="#121113"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g8)"/>
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#C9A227" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="400" y="480" font-family="Georgia, serif" font-size="34" fill="#C9A227" text-anchor="middle" opacity="0.85">La Belly</text>
+  <text x="400" y="520" font-family="Georgia, serif" font-size="22" fill="#F3EFE9" text-anchor="middle" opacity="0.6">Vestido Ocre</text>
+</svg>
